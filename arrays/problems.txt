@@ -1,0 +1,7 @@
+1.Program to print an array.
+2.Program to print an array in reverse order.
+3.Program to calculate sum of an array.
+4.Program to calculate average of an array.
+5.Program to find the largest element of an array.
+6.Program to find the second largest element of an array.
+7.Program to find the smallest element of an array.

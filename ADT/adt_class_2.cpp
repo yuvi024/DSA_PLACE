@@ -1,21 +1,21 @@
 #include <iostream>
+
 using namespace std;
 
 class Animal
 {
-  private:
-    string m_name;
+private:
+  string m_name;
 
-  public:
-    Animal(string name) : m_name(name)
-    {
+public:
+  Animal(string name) : m_name(name)
+  {
+  }
 
-    }
-
-    string GetName()
-    {
-      return m_name;
-    }
+  string GetName()
+  {
+    return m_name;
+  }
 };
 
 int main()
