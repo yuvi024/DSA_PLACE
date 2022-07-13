@@ -1,3 +1,7 @@
+/*
+* Insert element at the end of an array
+*/
+
 #include <iostream>
 using namespace std;
 

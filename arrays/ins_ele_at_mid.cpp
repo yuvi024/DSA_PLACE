@@ -1,3 +1,8 @@
+/*
+* Insert element at the mid of an array
+*/
+
+
 #include <iostream>
 using namespace std;
 
