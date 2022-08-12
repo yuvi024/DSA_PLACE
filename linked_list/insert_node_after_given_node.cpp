@@ -1,10 +1,11 @@
 #include <iostream>
 using namespace std;
 
-class Node {
-  public:
-    int data;
-    Node *next;
+class Node
+{
+public:
+  int data;
+  Node *next;
 };
 
 void insertAfter(Node *prev_node, int new_data)
@@ -12,7 +13,7 @@ void insertAfter(Node *prev_node, int new_data)
   if (prev_node == NULL)
   {
     cout << "Previous node can't be NULL.";
-    return ;
+    return;
   }
 
   Node *new_node = new Node();
@@ -20,6 +21,15 @@ void insertAfter(Node *prev_node, int new_data)
   new_node->data = new_data;
   new_node->next = prev_node->next;
   prev_node->next = new_node;
+}
+
+void printlist(Node *head)
+{
+  while (head != NULL)
+  {
+    cout << head->data << " ";
+    head = head->next;
+  }
 }
 
 int main()
@@ -48,11 +58,7 @@ int main()
 
   insertAfter(two->next, 70);
 
-  while (head != NULL)
-  {
-    cout << head->data << " ";
-    head = head->next;
-  }
+  printlist(head);
 
   return 0;
 }
