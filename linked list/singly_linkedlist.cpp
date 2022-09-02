@@ -50,7 +50,8 @@ void insertAfterNode(Node *prevNode, int newData)
   newNode->next = prevNode->next;
   prevNode->next = newNode;
 }
-
+void insertAtBeginning(){
+  
 void deleteNode(Node **head, int key)
 {
   Node *temp = *head;
@@ -122,6 +123,25 @@ Node *removeLastNode(Node *head)
 
   return head;
 }
+  ListNode* reverseList(ListNode* head) {
+      ListNode* prev = NULL;
+      if(head == NULL) {
+          return head;
+      }
+      if(head -> next == NULL) {
+          return head;
+      }
+      ListNode* curr = head -> next;
+      while(head != NULL) {
+          head -> next = prev;
+          prev = head;
+          head = curr;
+          if(curr != NULL) {
+              curr = curr -> next;
+          }
+      }
+        return prev;
+    }
 
 int findLen(Node *head)
 {
