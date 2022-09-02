@@ -1,7 +1,4 @@
-// C++ code to perform circular linked list operations
-
 #include <iostream>
-
 using namespace std;
 
 struct Node
